@@ -51,14 +51,14 @@ public class RubricaTelefonica {
         RubricaTelefonica rubrica = new RubricaTelefonica();
 
         // Test dei metodi
-        rubrica.aggiungiContatto("Mario", "123456");
-        rubrica.aggiungiContatto("Luca", "789012");
-        rubrica.aggiungiContatto("Anna", "345678");
+        rubrica.aggiungiContatto("Giacomino Poretti", "123456");
+        rubrica.aggiungiContatto("Giovanni Storti", "789012");
+        rubrica.aggiungiContatto("Aldo Baglio", "345678");
 
-        System.out.println("Telefono di Mario: " + rubrica.ricercaTelefonoPerNome("Mario"));
+        System.out.println("Telefono di Giacomino: " + rubrica.ricercaTelefonoPerNome("Giacomino Poretti"));
         System.out.println("Nome per numero 345678: " + rubrica.ricercaNomePerTelefono("345678"));
 
-        rubrica.rimuoviContatto("Luca");
+        rubrica.rimuoviContatto("Aldo Baglio");
 
         rubrica.stampaContatti();
     }
